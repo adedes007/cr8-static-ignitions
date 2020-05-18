@@ -1,0 +1,48 @@
+{
+    "ignition": {
+        "version": "2.2.0",
+        "config": {
+            "append": [
+                {
+                    "source": "http://10.0.50.222:8080/ignition/worker.ign",
+                    "verification": {}
+                }
+            ]
+        }
+    },
+    "networkd": {},
+    "passwd": {},
+    "storage": {
+        "files": [
+            {
+                "filesystem": "root",
+                "path": "/etc/sysconfig/network-scripts/ifcfg-ens192",
+                "contents": {
+                    "source": "data:;base64,IyBHZW5lcmF0ZWQgYnkgZHJhY3V0IGluaXRyZApOQU1FPSJlbnMxOTIiCkRFVklDRT0iZW5zMTkyIgpPTkJPT1Q9eWVzCk5FVEJPT1Q9eWVzClVVSUQ9ImE3Y2EzYTJjLTJlNmQtNGVmMi05ZTVmLTcwOTZlMmE1ZGZhYiIKQk9PVFBST1RPPW5vbmUKSVBBRERSPSIxMC4wLjUwLjExIgpORVRNQVNLPSIyNTUuMjU1LjI1NS4wIgpHQVRFV0FZPSIxMC4wLjUwLjIyMiIKVFlQRT1FdGhlcm5ldApETlMxPSIxMC4wLjUwLjIyMiIKCg==",
+                    "verification": {}
+                },
+                "mode": 420
+            },
+            {
+                "filesystem": "root",
+                "path": "/etc/resolv.conf",
+                "contents": {
+                    "source": "data:;base64,IyBHZW5lcmF0ZWQgYnkgTmV0d29ya01hbmFnZXIKc2VhcmNoIG9jcDUwLmV4YW1wbGUuY29tCm5hbWVzZXJ2ZXIgMTAuMC41MC4yMjIKCg==",
+                    "verification": {}
+                },
+                "mode": 420
+            },
+            {
+                "filesystem": "root",
+                "path": "/etc/hostname",
+                "contents": {
+                    "source": "data:;base64,d29ya2VyMC5vY3A1MC5leGFtcGxlLmNvbQo=",
+                    "verification": {}
+                },
+                "mode": 420
+            }
+        ]
+    },
+    "systemd": {}
+}
+
